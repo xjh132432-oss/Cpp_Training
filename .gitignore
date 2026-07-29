@@ -1,0 +1,98 @@
+# ======================
+# C/C++ 编译文件
+# ======================
+
+# Windows
+*.exe
+*.dll
+*.obj
+*.o
+
+# Linux/macOS
+*.out
+*.a
+*.soc
+*.dylib
+
+# C++缓存
+*.gch
+
+
+# ======================
+# VS Code
+# ======================
+
+.vscode/
+
+
+# ======================
+# CMake
+# ======================
+
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+
+# ======================
+# macOS
+# ======================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+.dSYM/
+# macOS临时文件
+._*
+
+
+# ======================
+# Windows
+# ======================
+
+Thumbs.db
+Desktop.ini
+
+# VS临时文件
+*.suo
+*.user
+*.vcxproj*
+*.pdb
+
+
+# ======================
+# 临时文件
+# ======================
+
+*.log
+*.tmp
+*.bak
+
+
+# ======================
+# 测试数据（可选）
+# ======================
+
+# 如果刷题时不想上传测试数据取消注释
+# input.txt
+# output.txt
+# C++ 编译文件
+
+*.exe
+*.out
+*.o
+
+# Mac clang
+*.dSYM/
+a.out
+
+# VS Code
+.vscode/
+
+# Mac系统
+.DS_Store
+
+# Windows
+Thumbs.db
