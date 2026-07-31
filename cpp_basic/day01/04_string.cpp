@@ -8,7 +8,7 @@ int main()
 
     cin>>s;
 
-    cout<<s.size()<<helloendl;
+    cout<<s.size()<<endl;
 
     cout<<s[0];
 
