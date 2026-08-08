@@ -76,7 +76,7 @@ void searchStud(unordered_map<int,student>& data)
 
     else
     {
-        cout<<"该学号存在"<<endl;
+        cout<<"该学号不存在"<<endl;
     }
 }
 
@@ -92,8 +92,6 @@ void updataScore(unordered_map<int,student>& data)
     {   
 
         int score;
-
-        student s;
 
         cout<<"请输入成绩"<<endl;
 
@@ -153,7 +151,7 @@ void scoreStatistics(unordered_map<int,student>& data)
 
     for(auto x:data)
     {
-        count[x.first]++;
+        count[x.second.score]++;
     }
 
     for(auto x:count)
@@ -243,5 +241,5 @@ int main()
 
     }
 
-
+    return 0;
 }
