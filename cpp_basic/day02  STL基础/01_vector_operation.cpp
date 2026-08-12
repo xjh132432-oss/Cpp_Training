@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+// Day 02: STL basics practice.
 using namespace std;
 int main()
 {
