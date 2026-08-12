@@ -1,4 +1,5 @@
 #include<iostream>
+// Day 03: functions and arrays practice.
 using namespace std;
 void print_score(int n,int score[]);
 void total_score(int n,int score[]);
