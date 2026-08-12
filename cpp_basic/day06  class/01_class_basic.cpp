@@ -1,4 +1,5 @@
 #include<iostream>
+// Day 06: classes practice.
 using namespace std;
 
 class Student
