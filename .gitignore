@@ -1,27 +1,22 @@
 # ======================
 # C/C++ 编译文件
 # ======================
-*.txt
-# Windows
+
 *.exe
 *.dll
 *.obj
 *.o
-
-# Linux/macOS
 *.out
 *.a
-*.soc
 *.dylib
-*a.out
-# C++缓存
 *.gch
+a.out
 
 
 # ======================
 # VS Code
 # ======================
-.build/
+
 .vscode/
 
 
@@ -43,9 +38,8 @@ cmake_install.cmake
 .DS_Store
 .AppleDouble
 .LSOverride
-.dSYM/
-# macOS临时文件
 ._*
+.dSYM/
 
 
 # ======================
@@ -55,7 +49,7 @@ cmake_install.cmake
 Thumbs.db
 Desktop.ini
 
-# VS临时文件
+# Visual Studio
 *.suo
 *.user
 *.vcxproj*
@@ -72,27 +66,8 @@ Desktop.ini
 
 
 # ======================
-# 测试数据（可选）
+# 测试数据（按需开启）
 # ======================
 
-# 如果刷题时不想上传测试数据取消注释
 # input.txt
 # output.txt
-# C++ 编译文件
-
-*.exe
-*.out
-*.o
-
-# Mac clang
-*.dSYM/
-a.out
-
-# VS Code
-.vscode/
-
-# Mac系统
-.DS_Store
-
-# Windows
-Thumbs.db
