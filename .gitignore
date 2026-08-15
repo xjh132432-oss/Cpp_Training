@@ -48,7 +48,7 @@ cmake_install.cmake
 
 Thumbs.db
 Desktop.ini
-
+*.txt
 # Visual Studio
 *.suo
 *.user
