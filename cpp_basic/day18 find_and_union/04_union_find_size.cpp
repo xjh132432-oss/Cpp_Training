@@ -1,10 +1,11 @@
 #include<iostream>
 #include<vector>
+#include<map>
 using namespace std;
 
 
 
-int n;
+int n=100;
 
 vector<int> ls(n,0);
 
@@ -18,24 +19,9 @@ int find(int a)
     }
     else
     {
-        return find(ls[a]);
+        return ls[a]=find(ls[a]);
     }
     
-}
-
-
-
-void isSame(int a,int b)
-{
-    if (find(a)==find(b))
-    {
-        cout<<"yes";
-    }
-    else
-    {
-        cout<<"no";
-    }
-
 }
 
 
@@ -68,28 +54,34 @@ int main()
 
 
 
-    int q;
+    int m;
 
-    cin>>q;
+    cin>>m;
 
-    while(q--)
+    while(m--)
     {
-        int choice,num1,num2;
+        int num1,num2;
 
-        cin>>choice>>num1>>num2;
+        cin>>num1>>num2;
 
-        if (choice==1)
-        {
-            Union(num1,num2);
-        }
-        else if(choice==2)
-        {
-            isSame(num1,num2);
-        }
+        Union(num1,num2);
+
 
     }
 
 
-    
+
+    map<int,int> count;
+
+    for(auto x:ls)
+    {   
+
+        count[x]++;
+    }
+
+
+    cout<<count[count.size()-1];
+
+
     return 0;
 }

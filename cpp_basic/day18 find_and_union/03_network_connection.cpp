@@ -18,7 +18,7 @@ int find(int a)
     }
     else
     {
-        return find(ls[a]);
+        return ls[a]=find(ls[a]);
     }
     
 }
@@ -58,7 +58,7 @@ void Union(int a,int b)
 
 int main()
 {
-    cin>>n;
+    
 
     for(int i=0;i<n;i++)
     {
@@ -74,15 +74,17 @@ int main()
 
     while(q--)
     {
-        int choice,num1,num2;
+        int num1,num2;
+
+        char choice;
 
         cin>>choice>>num1>>num2;
 
-        if (choice==1)
+        if (choice=='c')
         {
             Union(num1,num2);
         }
-        else if(choice==2)
+        else if(choice=='q')
         {
             isSame(num1,num2);
         }
